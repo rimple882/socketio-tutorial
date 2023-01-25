@@ -12,7 +12,6 @@ def handle_connect(sid, environ):
 @socketio.on('disconnect')
 def handle_disconnect(sid):
     print(sid, 'disconnected')
-    print('hagat gededa')
 
 if __name__ == '__main__':
     socketio.run(app)
