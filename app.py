@@ -7,6 +7,7 @@ socketio = SocketIO(app,async_mode='gevent')
 @socketio.on('connect')
 def handle_connect(sid, environ):
     print(sid, 'connected')
+    print(0)
 
 @socketio.on('disconnect')
 def handle_disconnect(sid):
